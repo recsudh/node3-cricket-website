@@ -3,6 +3,8 @@ const app = express()
 const path = require('path')
 const hbs = require('hbs')
 
+const port = process.env.PORT||3000;
+
 const fetchdata=require('../utils/app')
 // console.log(__dirname);
 const dir = path.join(__dirname,'../view/main')
@@ -22,6 +24,6 @@ app.get('',(req,res)=>{
 // app.get('/info',(req,res)=>{
 //     console.log(fetchdata());
 // })
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log('server is on');
 })
