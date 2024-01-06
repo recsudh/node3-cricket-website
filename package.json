@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "node work.js"
+    "start":"node ./src/work.js"
   },
   "author": "",
   "license": "ISC",
